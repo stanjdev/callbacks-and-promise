@@ -7,10 +7,10 @@ const p = new Promise((resolve, reject) => {
 });
 
 p.then((message) => {
-  console.log('Promise resolved successfully! 😀');
+  console.log('Promise resolved! 😀');
   console.log(message);
 }).catch((err) => {
-  console.log('Promise rejected 😞');
+  console.log('Promise rejected! 😞');
   console.log(err);
 });
 
