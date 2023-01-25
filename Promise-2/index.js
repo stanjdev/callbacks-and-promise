@@ -12,9 +12,9 @@ function asyncNumberChecker(n) {
 
 // The function above returns a promise. Your job is 
 // to handle the promise in the function calls below. 
-// Complete the code below to handle the promise 
-// returned by asyncNumberChecker with 
-// .then() and errors with .catch()
+// Complete the code below and handle the promise 
+// returned by asyncNumberChecker .then() and .catch()
+// Display the returned message in the console.
 
 asyncNumberChecker(10)
 
