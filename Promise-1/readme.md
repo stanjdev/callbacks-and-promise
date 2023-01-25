@@ -28,7 +28,7 @@ Here's what lines 8 to 11 would look like this without the callback.
 
 Run the sample code and wait for the message to appear in the console. Then try the problems below. 
 
-**Problems to solve**
+**Problems to solve** Test the code above and answer the questions below. 
 
 **1)** What happens when a promise is rejected? Test it by calling `reject()`
 
