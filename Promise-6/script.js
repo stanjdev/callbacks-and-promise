@@ -11,23 +11,23 @@ function onsuccess(pos) {
   console.log(`Latitude : ${latitude}`);
   console.log(`Longitude: ${longitude}`);
   console.log(`More or less ${accuracy} meters.`);
-} 
+}
 
 function onerror(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
-navigator.geolocation.getCurrentPosition(onsuccess, onerror, options);
+// navigator.geolocation.getCurrentPosition(onsuccess, onerror, options);
 // navigator.geolocation( successCallback, errorCallback, options )
 
 // navigator.geolocation((pos) => {
-//   // 
+//   //
 // }, (err) => {
-//   // 
+//   //
 // }, {})
 
 
-// Challenge: Make this work: 
+// Challenge: Make this work:
 
 function getGeolocation(options) {
   return new Promise( (resolve, reject) => {
@@ -35,9 +35,13 @@ function getGeolocation(options) {
   } )
 }
 
-// Like this: 
+// Like this:
 
 getGeolocation(options)
-  .then(pos => { })
-  .catch(err => { })
+  .then(pos => {
+    onsuccess(pos)
+   })
+  .catch(err => {
+    onerror(err)
+   })
 
